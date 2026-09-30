@@ -1,0 +1,5 @@
+Pytest: 30 passed.
+Local verified implementation commit: 259177f326fb34aebfa150176a0e568be019a069
+The completion marker is committed separately after this verified implementation commit.
+
+Built the Sparrow ROI Calculator as the standard-library-only roicalc package with the src CLI and all six subcommands: baseline, model, scenario, actual, report, and fixtures. The implementation records provenance in an atomic JSON store, refuses missing measured baselines with named errors, uses Decimal arithmetic and ROUND_HALF_UP for GBP money, omits money when no rate exists, keeps hypothetical scenarios isolated and labelled, preserves independent model snapshots, and renders deterministic Markdown and JSON reports with predicted-versus-actual evidence. The complete README documents formulas, CLI commands, error catalogue, honesty boundary, limitations, fixtures, and the evidence loop. All 30 pytest cases pass, and the installed console entry point verified the synthetic fixture's 200 weekly minutes, GBP 100.00 weekly savings, and GBP 433.33 monthly savings. Nothing was published.
