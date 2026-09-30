@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sparrow-roi-calculator"
+version = "1.0.0"
+description = "Measured, auditable automation savings"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+src = "roicalc.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["roicalc*"]

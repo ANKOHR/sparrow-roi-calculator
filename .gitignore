@@ -1,0 +1,12 @@
+__pycache__/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.venv/
+.src-baselines.json
+src-prompt.txt
+src-launch.py
+src-codex.log
+*.log
+demo/
